@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>8일차</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>Wed Programming</h1>
+    <ul id="itemlist">
+      <li>html</li>
+      <li>css</li>
+      <li>JS</li>
+    </ul>
+    <div id="box"></div>
+    <script>
+      var newP = document.createElement("p");
+      //   console.log(newP);
+      var txtNode = document.createTextNode(
+        "DOM은 document object model의 줄임말입니다."
+      );
+      //   console.log(txtNode);
+      newP.appendChild(txtNode);
+      //   console.log(newP.appendChild(txtNode));
+      document.getElementById("box").appendChild(newP);
+      //   console.log(document.querySelectorAll("li")[1]);
+      //   console.log(document.querySelectorAll("li"));
+      //   console.log(document.querySelector("li"));
+      //   console.log(document.querySelector("#itemlist"));
+    </script>
+  </body>
+</html>

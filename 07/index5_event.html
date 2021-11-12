@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>7일차</title>
+    <style>
+      img {
+        width: 80px;
+        height: 80px;
+        margin: 50px 0 10px;
+      }
+      #wrap {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>이벤트 공지</h1>
+      <div>
+        <img src="img/notice.png" alt="그림" />
+      </div>
+      <p>
+        <!-- <a href="index5_main.html">자세히 보기</a> -->
+        <!-- <a href="index5_main.html" onclick="loadURL(this.href);">자세히 보기</a> -->
+        <a href="index5_main.html" onclick="loadURL(this.href); return false"
+          >자세히 보기</a
+        >
+      </p>
+    </div>
+    <script>
+      function loadURL(url) {
+        // window.creator.location = url;
+        window.opener.location = url;
+        window.close();
+      }
+    </script>
+  </body>
+</html>

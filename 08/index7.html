@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>8일차</title>
+    <style>
+      #container {
+        width: 400px;
+        border: 1px solid darkblue;
+        margin: 0 auto;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img id="cup" src="img/coffee03.jpg" alt="커피" />
+    </div>
+    <script>
+      // var cover = document.getElementById("cup");
+      // cover.addEventListener("mouseover", function () {
+      //   cover.src = "img/coffee01.jpg";
+      // });
+      // cover.addEventListener("mouseout", function () {
+      //   cover.src = "img/coffee03.jpg";
+      // });
+      const cover = document.getElementById("cup");
+      // console.log(cup);
+      cover.addEventListener("mouseover", function() {
+        cover.src = "img/coffee01.jpg";
+      });
+      cover.addEventListener("mouseout", function() {
+        cover.src = "img/coffee03.jpg";
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>6일차</title>
+    <style></style>
+  </head>
+  <body>
+    <p>문서를 열면 팝업창이 표시됩니다.</p>
+
+    <script>
+      function openPopup() {
+        var newWin = window.open(
+          "index26-notice.html",
+          "pop",
+          "widht=500, height=400, left=300, top= 200"
+        );
+        if (newWin == null) {
+          alert("팝업이 차단되었습니다. 해제해주세요.");
+        }
+        newWin.moveBy(100, 100);
+      }
+    </script>
+  </body>
+</html>

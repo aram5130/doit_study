@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>6일차</title>
+    <style>
+      .over {
+        position: absolute;
+        top: 410px;
+        left: 20px;
+      }
+      .detail {
+        width: 620px;
+        border: 1px solid #aaa;
+        margin-top: 10px;
+        padding: 10px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img/new-york-g1188d7710_640.jpg" alt="img" />
+    <button class="over" id="open">상세 설명 보기</button>
+    <div class="detail" id="desc">
+      <!-- <div class="detail" id="desc" style="display: none"> -->
+      <h4>배경화면</h4>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s,
+      </p>
+      <button id="close">상세 설명 닫기</button>
+    </div>
+    <script>
+      document.querySelector("#open").onclick = function () {
+        document.querySelector("#desc").style.display = "block";
+        document.querySelector("#open").style.display = "none";
+      };
+
+      document.querySelector("#close").onclick = function () {
+        document.querySelector("#desc").style.display = "none";
+        document.querySelector("#open").style.display = "block";
+      };
+    </script>
+  </body>
+</html>

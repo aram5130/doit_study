@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>4일차</title>
+    <style>
+      #heading {
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">자바스크립트</h1>
+    <p id="text">위 텍스트를 클릭해 보세요</p>
+
+    <h1 id="heading2">자바스크립트</h1>
+    <p id="text2">위 텍스트를 클릭해 보세요</p>
+    
+    <script>
+      var heading = document.querySelector('#heading');
+      heading.onclick = function () {
+        heading.style.color = "tomato";
+      };
+
+      const hd2 = document.querySelector('#heading2');
+      hd2.onclick = function () {
+        hd2.style.color = "teal";
+      }
+      
+
+
+
+      // var heading = document.querySelector("#heading");
+      // // console.log(heading);
+      // heading.onclick = function () {
+      //   heading.style.color = "tomato";
+      // };
+    </script>
+  </body>
+</html>

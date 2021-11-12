@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>7일차</title>
+    <style>
+      .over {
+        position: absolute;
+        top: 410px;
+        left: 20px;
+      }
+      .detail {
+        width: 600px;
+        border: 1px solid #aaa;
+        padding: 20px;
+        margin-top: 20px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img/new-york-g1188d7710_640.jpg" alt="img" />
+    <button class="over" id="open" onclick="showDetail()">
+      상세 설명 보기
+    </button>
+    <div class="detail" id="desc">
+      <h4>흑백사진</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
+        voluptates modi nihil harum saepe cumque dolor esse illo sit dolores,
+        qui quia illum aliquam ipsum nobis eaque ducimus repellendus
+        perspiciatis?
+      </p>
+      <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+    </div>
+    <script>
+      function showDetail() {
+        document.querySelector('#desc').style.display = "block";
+        document.querySelector('#open').style.display = "none";
+      }
+      function hideDetail() {
+        document.querySelector('#open').style.display = "block";
+        document.querySelector('#desc').style.display = "none";
+      }
+    </script>
+  </body>
+</html>

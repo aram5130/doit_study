@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>8일차</title>
+    <style>
+      /* * {
+            margin: 0;
+            padding: 0;
+        } */
+      #container {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      input[type="text"] {
+        width: 400px;
+        height: 30px;
+        padding-left: 20px;
+        /* check */
+        float: left;
+        box-sizing: border-box;
+      }
+      button {
+        width: 90px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border: none;
+        float: right;
+      }
+      hr {
+        display: none;
+        clear: both;
+        content: "";
+      }
+      ul {
+        list-style: none;
+        padding-top: 50px;
+      }
+      li {
+        line-height: 2.5;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Wed Programming</h1>
+      <p>공부할 주제를 기록해 보세요.</p>
+      <form>
+        <input id="subject" type="text" name="" autofocus />
+        <button onclick="newRegister(); return false">추 가</button>
+      </form>
+      <hr />
+      <ul id="itemList"></ul>
+    </div>
+
+    <script>
+      function newRegister() {
+        var newItem = document.createElement("li");
+        var subject = document.querySelector("#subject");
+        var newText = document.createTextNode(subject.value);
+
+        newItem.appendChild(newText);
+
+        var itemList = document.querySelector("#itemList");
+
+        itemList.insertBefore(newItem, itemList.childNodes[0]);
+        // itemList.appendChild(newItem);
+
+        subject.value = "";
+
+        // <li></li> delete
+        var items = document.querySelectorAll("li");
+
+        for (i = 0; i < items.length; i++) {
+          items[i].addEventListener("click", function () {
+            if (this.parentNode) this.parentNode.removeChild(this);
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

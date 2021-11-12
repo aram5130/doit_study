@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>7일차</title>
+    <style>
+      #container {
+        width: 500px;
+        height: 340px;
+        margin: 0 auto;
+        /* background-color: lightsteelblue; */
+        position: relative;
+        overflow: hidden;
+      }
+      #prod-pic {
+        position: absolute;
+        left: 20px;
+        top: 70px;
+      }
+      #desc {
+        position: absolute;
+        right: 30px;
+        top: 50px;
+      }
+      #detail {
+        margin-top: 30px;
+        position: relative;
+        top: 250px;
+      }
+      .small {
+        width: 60px;
+        margin-right: 5px;
+      }
+      span {
+        color: rgb(43, 70, 224);
+        font-weight: bold;
+      }
+      #desc li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+      #desc button {
+        width: 200px;
+        padding: 10px;
+      }
+      #view {
+        padding-left: 40px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>에티오피아 게뎁</h1>
+      <div id="prod-pic">
+        <img
+          onclick="displaySrc()"
+          src="img/coffee01.jpg"
+          alt="사진1"
+          width="200"
+        />
+        <div>
+          <img class="small" src="img/coffee02.jpg" alt="사진2" />
+          <img class="small" src="img/coffee03.jpg" alt="사진3" />
+          <img class="small" src="img/coffee04.jpg" alt="사진4" />
+        </div>
+      </div>
+      <div id="desc">
+        <ul>
+          <li>상품명 : 에티오피아 게뎁</li>
+          <li><span>상품명 : 9,000원</span></li>
+          <li>배송비 : 3000원<br />(50,000원 이상 구매시 무료)</li>
+          <li>적립금 : 180원(2%)</li>
+          <li>로스팅 : 2021.11.01</li>
+          <button>장바구니 담기</button>
+        </ul>
+        <a href="#" id="view">상세 설명 보기</a>
+      </div>
+      <div id="detail">
+        <hr />
+        <h2>상품 상세 정보</h2>
+        <ul>
+          <li>원산지 : 에티오피아</li>
+          <li>지 역 : 이르가체프 코체레</li>
+          <li>농 장 : 게뎁</li>
+          <li>고 도 : 1,950 ~ 2,000m</li>
+          <li>품 종 : 지역 토착종</li>
+          <li>가공법 : 위시드</li>
+        </ul>
+        <h3>정보</h3>
+        <p>
+          커피식물의 원산지이며 에티오피아 고원은 커피가 처음 발견된 곳이다.
+          그런 만큼 이곳의 커피는 과거부터 현재까지 전 세계적으로 유명하며 특히
+          시다모, 예가체프, 하라르 지역의 원두가 유명하다. 전 지역에서 퇴비를
+          사용하고 손으로 직접 따는 등 전통적인 방식으로 생산하기 때문에 유기농
+          커피나 다름 없으며 다른 생산지의 원두에 비해 원두 자체의 카페인 함량이
+          낮은 편이다
+        </p>
+        <h3>향미</h3>
+        <p>
+          짙은 꽃향기가 큰 특징이다. 목 넘김 이후 남은 향과 부드러운 보디,
+          달콤한 신맛이 조화를 이룬다. 특유의 신맛으로 대중적이진 않지만
+          마니아층이 탄탄한 원두다.
+        </p>
+      </div>
+    </div>
+    <script>
+      function displaySrc() {
+        var cup = document.querySelector("#cup");
+        // console.log(cup);
+        alert("이미지 소스 : " + cup.getAttribute("src"));
+        // var temp = cup.getAttribute("src");
+        // // console.log(temp);
+        // alert("이미지 소스 : " + temp);
+      }
+    </script>
+  </body>
+</html>

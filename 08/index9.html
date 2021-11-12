@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>8일차</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        width: 420px;
+        margin: 0 auto;
+        /* background-color: cadetblue; */
+      }
+      .row ul {
+        list-style: none;
+      }
+      .row li {
+        /* display: inline-block; */
+        display: inline-table;
+      }
+      .row img {
+        width: 135px;
+      }
+      #lightbox {
+        /* background-color: black; */
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      #lightboxImage {
+        position: absolute;
+        border: 5px solid white;
+        top: 50%;
+        left: 50%;
+        /* check */
+        /* transform: translateY(-50%); */
+        /* transform: translateX(-50%); */
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <ul>
+        <li>
+          <img
+            class="pic"
+            src="img/photo01.jpg"
+            data-src="img/photo01.jpg"
+            alt="사진"
+          />
+        </li>
+        <li>
+          <img
+            class="pic"
+            src="img/photo02.jpg"
+            data-src="img/photo02.jpg"
+            alt="사진"
+          />
+        </li>
+        <li>
+          <img
+            class="pic"
+            src="img/photo03.jpg"
+            data-src="img/photo03.jpg"
+            alt="사진"
+          />
+        </li>
+        <li>
+          <img
+            class="pic"
+            src="img/photo04.jpg"
+            data-src="img/photo04.jpg"
+            alt="사진"
+          />
+        </li>
+        <li>
+          <img
+            class="pic"
+            src="img/photo05.jpg"
+            data-src="img/photo05.jpg"
+            alt="사진"
+          />
+        </li>
+        <li>
+          <img
+            class="pic"
+            src="img/photo06.jpg"
+            data-src="img/photo06.jpg"
+            alt="사진"
+          />
+        </li>
+      </ul>
+    </div>
+    <div id="lightbox">
+      <img id="lightboxImage" src="img/photo01.jpg" alt="사진" />
+    </div>
+    <script>
+      var pics = document.getElementsByClassName("pic");
+      //   console.log(pic);
+      var lightbox = document.getElementById("lightbox");
+      //   console.log(lightbox);
+      var lightboxImage = document.getElementById("lightboxImage");
+      //   console.log(lightboxImage);
+
+      for (i = 0; i < pics.length; i++) {
+        pics[i].addEventListener("click", showLightbox);
+      }
+      function showLightbox() {
+        var bigLocation = this.getAttribute("data-src");
+        console.log(bigLocation);
+        lightboxImage.setAttribute("src", bigLocation);
+        lightbox.style.display = "block";
+      }
+
+      //   lightbox 닫기
+      lightbox.onclick = function () {
+        lightbox.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>8일차</title>
+    <style>
+      #container {
+        width: 300px;
+        border: 1px solid darkblue;
+        margin: 0 auto;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img id="cup" src="img/coffee03.jpg" alt="커피" />
+    </div>
+    <script>
+      // var con = document.querySelector("#container");
+      // console.log(con);
+      // con.onclick = function () {
+      //   alert("이미지를 클릭했습니다.");
+      // };
+     const cup = document.querySelector("#container");
+     cup.onclick = function() {
+       alert('이미지를 클릭했습니다.');
+     };
+    </script>
+  </body>
+</html>

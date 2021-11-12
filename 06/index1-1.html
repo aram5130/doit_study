@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>6일차</title>
+    <style>
+      .over {
+          position: absolute;
+          top: 410px;
+          left: 20px;
+      }
+      .detail {
+          width: 600px;
+          border: 1px solid #aaa;
+          padding: 20px;
+          margin-top: 20px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img/new-york-g1188d7710_640.jpg" alt="img" />
+    <button class="over" id="open" onclick="showDetail()">
+      상세 설명 보기
+    </button>
+    <div class="detail" id="desc">
+      <!-- <div class="detail" id="desc" style="display: none"> -->
+      <h4>배경화면</h4>
+      <p>
+        시에나 찰스는 2012년부터 조시 W. 부시 전 미국 대통령을 포함하여 15명의
+        세계 각국 지도자, 톱스타 연예인, 억만장자들의 여행을 기획했다. “루브르
+        박물관, 베르사유 궁전, 이집트 스핑크스에 마추픽추까지... 전부 다 제가
+        문을 닫게 했다. 돈만 있으면 어디든지 예약할 수 있다.” 인디아 씨가 CNN
+        뉴스에 전한 말이다.
+      </p>
+      <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+    </div>
+    <script>
+      function showDetail() {   //onclick속성을 사용해 #desc를 보여지도록 하고, #open버튼을 가림
+          document.querySelector('#desc').style.display = "block"   //#desc를 블록(보여줌)
+          document.querySelector('#open').style.display = "none"    //#open버튼을 가림
+      }
+      function hideDetail() {   //onclick속성을 사용해 #desc을 가리고, #open버튼을 보임
+        document.querySelector('#desc').style.display = "none"  //#desc을 가림
+        document.querySelector('#open').style.display = "block" //#open 버튼을 보여줌
+      }
+    </script>
+  </body>
+</html>

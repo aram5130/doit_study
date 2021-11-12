@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>7일차</title>
+    <style></style>
+  </head>
+  <body>
+    <p>문서를 열면 팝업창이 표시됩니다.</p>
+    <script>
+      // 팝업창 위치 제어
+      function openCenter(doc, win, w, h) {
+        //   1920 - 500 = 1420 / = 710
+        var left = (screen.availWidth - w) / 2;
+        //   1040 - 400 = 640 / = 320
+        var top = (screen.availHeight - h) / 2;
+        var opt =
+          "left = " +
+          left +
+          ", top = " +
+          top +
+          ", width = " +
+          w +
+          ", height = " +
+          h;
+        // console.log(opt);
+        window.open(doc, win, opt);
+      }
+      //   window.open("index07_notice.html", "pop", "widht=500, height=400");
+      openCenter("index07_notice.html", "pop", 500, 400);
+    </script>
+  </body>
+</html>

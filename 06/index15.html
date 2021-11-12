@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>6일차</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      var chars = ["a", "b", "c", "d"];
+      document.write(chars + "<br><br>");
+
+      var popped1 = chars.pop();
+      document.write(
+        "꺼낸 요소 : " + popped1 + "<br> 남은 요소 : " + chars + "<br><br>"
+      );
+
+      var popped2 = chars.shift();
+      document.write("꺼낸 요소 : " + popped2 + "<br> 남은 요소 : " + chars);
+
+      //   var popped2 = chars.unshift("a");
+      //   document.write(chars + "<br>");
+    </script>
+  </body>
+</html>

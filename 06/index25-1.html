@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>6일차</title>
+    <style></style>
+  </head>
+  <body>
+      <h1>랜덤 추첨</h1>
+    <script>
+      var seed = prompt('전체 응모자 수를 입력하세오', '');
+      var pick = Math.floor(Math.random() * seed + 1);
+      
+      document.write("전체 응모자 수 : " + seed + "명<br>");
+      document.write("당첨자 수 : " + pick + " 번 입니다.");9
+    </script>
+  </body>
+</html>

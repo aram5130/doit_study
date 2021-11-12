@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>7일차</title>
+    <style>
+      img {
+        width: 80px;
+        height: 80px;
+        margin: 50px 0 10px;
+      }
+      #wrap {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>문서를 열면 팝업창이 표시됩니다.</p>
+    <script>
+      // window.open("index5_event.html", "popup", "width=450, height=300");
+      var popWin = window.open(
+        "index5_event.html",
+        "popup",
+        "width=450, height=300"
+      );
+      // popWin.creator = self;
+      popWin.opener = self;
+    </script>
+  </body>
+</html>
