@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>10일차</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+      #container {
+        width: 1000px;
+        margin: 30px auto;
+        background-color: teal;
+      }
+      h1 {
+          text-align: center;
+      }
+      ul {
+         list-style: none; 
+         overflow: hidden;
+      }
+      .prod-list li {
+          float: left;
+          margin: 10px;
+          overflow: hidden;
+      }
+      img {
+          width: 300px;
+          height: 200px;
+      }
+      .prod-list li {
+          position: relative;
+      }
+      .prod-list .caption {
+          width: 300px;
+          height: 200px;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          text-align: center;
+          position: absolute;
+          top: 200px;
+          transition: all 1s;
+      }
+      .prod-list li:hover .caption {
+          top: 0;
+      }
+      .caption h2 {
+          margin-top: 40px;
+          line-height: 2;
+      }
+      .caption p {
+          line-height: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>신상품 목록</h1>
+      <ul class="prod-list">
+          <li>
+              <img src="img/photo04.jpg" alt="사진">
+              <div class="caption">
+                  <h2>상품</h2>
+                  <p>상품1 설명 텍스트</p>
+                  <p>가격 : 12,345원</p>
+              </div>
+          </li>
+          <li>
+            <img src="img/photo05.jpg" alt="사진">
+            <div class="caption">
+                <h2>상품</h2>
+                <p>상품2 설명 텍스트</p>
+                <p>가격 : 67,789원</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/photo06.jpg" alt="사진">
+            <div class="caption">
+                <h2>상품</h2>
+                <p>상품3 설명 텍스트</p>
+                <p>가격 : 34,567원</p>
+            </div>
+          </li>
+      </ul>
+    </div>
+
+    </div>
+  </body>
+</html>

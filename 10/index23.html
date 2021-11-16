@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>10일차</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #wrapper1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: minmax(100px, auto);
+        margin-bottom: 40px;
+      }
+      #wrapper2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: minmax(100px, auto);
+      }
+      .items {
+        padding: 10px;
+        background-color: #eee;
+      }
+      .items:nth-child(odd) {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>auto fit</h1>
+      <div id="wrapper1">
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+      </div>
+
+      <h1>auto fill</h1>
+      <div id="wrapper2">
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          fugiat quod aspernatur
+        </div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+      </div>
+    </div>
+  </body>
+</html>

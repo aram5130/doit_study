@@ -2,19 +2,32 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>9일차</title>
+    <title>10일차</title>
     <style>
       .origin {
         border: 2px solid #333;
         width: 200px;
-        margin: 40px;
+        margin: 50px;
         float: left;
+        perspective: 200px;
+      }
+      .origin div {
+        transition: all 2s;
       }
       .origin img {
         width: 200px;
       }
       .rotatex:hover {
         transform: rotateX(50deg);
+      }
+      .rotatey:hover {
+        transform: rotateY(50deg);
+      }
+      .rotatez:hover {
+        transform: rotateZ(50deg);
+      }
+      .rotatexyz:hover {
+        transform: rotate3d(2.5, 1.2, -1.5, 50deg);
       }
       #pers {
         perspective: 300px;
@@ -28,8 +41,20 @@
       </div>
     </div>
 
-    <div class="origin" id="pers">
-      <div class="rotatex">
+    <div class="origin">
+      <div class="rotatey">
+        <img src="img/photo02.jpg" alt="사진" />
+      </div>
+    </div>
+
+    <div class="origin">
+      <div class="rotatez">
+        <img src="img/photo02.jpg" alt="사진" />
+      </div>
+    </div>
+
+    <div class="origin">
+      <div class="rotatexyz">
         <img src="img/photo02.jpg" alt="사진" />
       </div>
     </div>

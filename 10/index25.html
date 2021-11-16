@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>10일차</title>
+    <style>
+      #wrapper {
+        width: 700px;
+        display: grid;
+        grid-template-columns: repeat(3, afr);
+        grid-template-rows: repeat(3, 100px);
+      }
+      .box {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px;
+      }
+      .box1 {
+        background-color: thistle;
+        grid-column: 1/4;
+      }
+      .box2 {
+        background-color: turquoise;
+        grid-row: 2/4;
+      }
+      .box3 {
+        background-color: darkslateblue;
+        grid-column: 2/4;
+        grid-row-start: 2;
+      }
+      .box4 {
+        background-color: tomato;
+        grid-column-start: 3;
+        grid-row-start: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+    </div>
+  </body>
+</html>

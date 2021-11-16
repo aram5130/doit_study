@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>9일차</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      p {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        float: left;
+        margin: 50px;
+      }
+      #move:hover {
+        background-color: teal;
+        transform: translate(10px, 20px);
+        transition: 1s;
+      }
+      #movex:hover {
+        background-color: tomato;
+        transform: translateX(50px);
+        transition: 1s;
+      }
+      #movey:hover {
+        background-color: brown;
+        transform: translateY(20px);
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="move"></p>
+      <p id="movex"></p>
+      <p id="movey"></p>
+    </div>
+  </body>
+</html>

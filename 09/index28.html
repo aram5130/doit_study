@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>9일차</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
+        width: 400px;
+        margin: 10px 30px;
+      }
+      fieldset {
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style: none;
+        margin: 20px;
+      }
+      li {
+        line-height: 2.5;
+      }
+      .navi label {
+        width: 80px;
+        display: inline-block;
+      }
+      .navi input[type="text"],
+      .navi input[type="tel"] {
+        border: 1px solid orange;
+        border-radius: 5px;
+        padding: 5px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>개인 정보</legend>
+        <nav class="navi">
+          <ul>
+            <li>
+              <label for="user-name">이름</label>
+              <input type="text" id="user-name" />
+            </li>
+            <li>
+              <label for="tel">연락처</label>
+              <input type="tel" id="tel" />
+            </li>
+          </ul>
+        </nav>
+      </fieldset>
+      <fieldset>
+        <legend>객실 형태</legend>
+        <nav class="navi">
+          <ul>
+            <li>
+              <input type="radio" id="basic" name="room" />
+              <label for="basic">기본형</label>
+            </li>
+            <li>
+              <input type="radio" id="family" name="room" />
+              <label for="family">가족형</label>
+            </li>
+          </ul>
+        </nav>
+      </fieldset>
+    </form>
+  </body>
+</html>

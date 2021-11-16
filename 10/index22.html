@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>10일차</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: 200px 200px 200px; */
+        grid-template-rows: minmax(100px, auto);
+      }
+      .items {
+        padding: 10px;
+        background-color: #eee;
+      }
+      .items:nth-child(odd) {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="items">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, fugiat
+        quod aspernatur
+      </div>
+      <div class="items">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, fugiat
+        quod aspernatur
+      </div>
+      <div class="items">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, fugiat
+        quod aspernatur
+      </div>
+      <div class="items">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, fugiat
+        quod aspernatur
+      </div>
+      <div class="items">Lorem ipsum dolor sit amet</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>10일차</title>
+    <style>
+      .origin {
+        border: 2px solid #333;
+        width: 200px;
+        margin: 50px;
+        float: left;
+        perspective: 200px;
+      }
+      .origin div {
+        transition: all 2s;
+      }
+      .origin img {
+        width: 200px;
+      }
+      .skewx:hover {
+        transform: skewX(30deg);
+      }
+      .skewy:hover {
+        transform: skewY(15deg);
+      }
+      .skewxy:hover {
+        transform: skew(-25deg, -15deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="origin">
+      <div class="skewx">
+        <img src="img/photo03.jpg" alt="사진" />
+      </div>
+    </div>
+
+    <div class="origin">
+      <div class="skewy">
+        <img src="img/photo03.jpg" alt="사진" />
+      </div>
+    </div>
+
+    <div class="origin">
+      <div class="skewxy">
+        <img src="img/photo03.jpg" alt="사진" />
+      </div>
+    </div>
+  </body>
+</html>

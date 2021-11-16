@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>10일차</title>
+    <style>
+      #container {
+        width: 100px;
+        height: 100px;
+        background-color: #333;
+        margin: 30px;
+        transition: all 3s;
+        /* transition: all 2s; */
+      }
+      p {
+        text-align: center;
+        line-height: 100px;
+        color: white;
+      }
+      #container:hover {
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+      }
+      .box1:hover {
+        transform: rotate(270deg);
+      }
+      .box2:hover {
+        transform: rotate(180deg);
+      }
+      .box3:hover {
+        transform: rotate(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="box1">
+      <p>BOX1</p>
+    </div>
+    <div id="container" class="box2">
+      <p>BOX2</p>
+    </div>
+    <div id="container" class="box3">
+      <p>BOX3</p>
+    </div>
+  </body>
+</html>
